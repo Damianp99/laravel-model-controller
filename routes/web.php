@@ -18,4 +18,4 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('movies/index', 'MovieController@index')->name('movies.index');
-Route::get('movies/show', 'MovieController@show')->name('movies.show');
+Route::get('movies/{id}', 'MovieController@show')->name('movies.show');
