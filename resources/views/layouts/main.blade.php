@@ -8,14 +8,21 @@
     <title>@yield('Title')</title>
 </head>
 <body>
-    <header class="container">
-        
-    </header>
+    {{-- HEADER --}}
+    @include('includes.header')
     <main>
-        
+
+        {{-- CARD MOVIE --}}
+        <section class="container d-flex flex-wrap">
+            @yield('content')
+        </section>
+       
+       
+        {{-- POSSIBILI YIELD --}}
+
     </main>
     <footer>
-        
+        {{-- FOOTER --}}
     </footer>
 </body>
 </html>
