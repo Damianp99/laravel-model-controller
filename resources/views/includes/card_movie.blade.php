@@ -10,6 +10,6 @@
       <li class="list-group-item">{{$movie->vote}}</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Più informazioni</a>
+      <a href="{{route('movies.show' , ['id' => $movie->id])}}" class="card-link">Più informazioni</a>
     </div>
   </div>
